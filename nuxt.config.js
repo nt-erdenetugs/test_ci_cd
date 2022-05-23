@@ -22,33 +22,6 @@ export default {
     meta: [
       { 'http-equiv': 'Content-Type', charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      {
-        hid: 'description',
-        name: 'description',
-        content: 'We aim to bring every advantage of innovative technologies, internet and e-commerce being beneficial regardless of location or country for our clients.',
-      },
-      { hid: 'author', name: 'author', content: 'Nashatech LLC' },
-      { hid: 'og:image', property: 'og:image', content: 'https://nashatech.com/logo.png' },
-      { hid: 'og:type', property: 'og:type', content: 'website' },
-      { hid: 'og:title', property: 'og:title', content: 'Nashatech LLC' },
-      { hid: 'og:url', property: 'og:url', content: 'https://nashatech.com/' },
-      {
-        hid: 'og:description',
-        property: 'og:description',
-        content: 'We aim to bring every advantage of innovative technologies, internet and e-commerce being beneficial regardless of location or country for our clients.',
-      },
-      { hid: 'robots', name: 'robots', content: 'index, follow' },
-      { hid: 'title', name: 'title', content: 'Nashatech LLC' },
-      {
-        hid: 'keywords',
-        name: 'keywords',
-        content:
-          'Nashatech LLC, Nashatech, nashatech llc, nashatech, nasha, tech, technology, technologies, software, software engineering, it, information technology, developer, digital marketing, marketing, website, system development, ナシャ　テック, ナシャテック',
-      },
-    ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700&family=Nunito:wght@300;400;600;700&display=swap', as: 'style' }
     ],
   },
   /*
@@ -60,12 +33,6 @@ export default {
    ** https://nuxtjs.org/guide/plugins
    */
   loading: true,
-  plugins: [
-    { src: '~/plugins/google-analytics.js' },
-    { src: '~/plugins/rtoaster.js' },
-    { src: '~/plugins/fullpage', ssr: false },
-    { src: '~/plugins/swiper', ssr: false },
-  ],
   /*
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components
