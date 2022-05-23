@@ -2,7 +2,7 @@ name: CI
 on: 
   push:
     branches:
-      - deploy #here we choose to deploy only when a push is detected on the main branch
+      - master #here we choose to deploy only when a push is detected on the main branch
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -17,7 +17,7 @@ jobs:
         
     # Here you could add some building steps if you were dealing with some angular/react/Vue...
     - name: Build static site
-     run: npm install && npm run generate
+      run: npm install && npm run generate
     
     - name: Deploy static site to S3 bucket
       run: aws s3 sync ./dist/ s3://test-ci-cd-1 --delete
